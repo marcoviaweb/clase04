@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenidos - Arquitectura Web y JavaScript Avanzado</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 2rem;
+        }
+        
+        .header {
+            margin-bottom: 2rem;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .module-title {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            color: #34495e;
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .greeting {
+            background: linear-gradient(45deg, #3498db, #2ecc71);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            font-size: 1.3rem;
+            line-height: 1.6;
+        }
+        
+        .participants {
+            margin: 2rem 0;
+        }
+        
+        .participants h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .welcome-message {
+            color: #555;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin: 1.5rem 0;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .feature h4 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .date {
+            background: #ecf0f1;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        
+        .footer {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid #ecf0f1;
+            color: #7f8c8d;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .container > * {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .container > *:nth-child(2) { animation-delay: 0.2s; }
+        .container > *:nth-child(3) { animation-delay: 0.4s; }
+        .container > *:nth-child(4) { animation-delay: 0.6s; }
+        
+        @media (max-width: 768px) {
+            .module-title {
+                font-size: 1.8rem;
+            }
+            
+            .container {
+                padding: 2rem;
+                margin: 1rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">🎓</div>
+            <h1 class="module-title">Arquitectura Web y JavaScript Avanzado</h1>
+            <p class="subtitle">UNIOR - Universidad Internacional de La Rioja</p>
+        </div>
+        
+        <div class="greeting">
+            <h2>¡Bienvenidos Estimados Participantes!</h2>
+            <p>Es un honor tenerlos en este módulo especializado donde exploraremos las tecnologías más avanzadas del desarrollo web moderno.</p>
+        </div>
+        
+        <div class="participants">
+            <h3>👥 Saludos Especiales</h3>
+            <div class="welcome-message">
+                Estimados estudiantes y profesionales del desarrollo web, les damos la más cordial bienvenida a este fascinante viaje de aprendizaje. En este módulo profundizaremos en conceptos avanzados que los convertirán en desarrolladores web de élite.
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <h4>🏗️ Arquitectura Web</h4>
+                <p>Patrones de diseño, microservicios y arquitecturas escalables</p>
+            </div>
+            <div class="feature">
+                <h4>⚡ JavaScript Avanzado</h4>
+                <p>ES6+, async/await, closures y programación funcional</p>
+            </div>
+            <div class="feature">
+                <h4>🚀 Tecnologías Modernas</h4>
+                <p>Frameworks, librerías y herramientas de vanguardia</p>
+            </div>
+            <div class="feature">
+                <h4>💡 Mejores Prácticas</h4>
+                <p>Clean Code, testing y metodologías ágiles</p>
+            </div>
+        </div>
+        
+        <div class="welcome-message">
+            <strong>¿Qué pueden esperar?</strong><br>
+            • Sesiones interactivas con casos reales<br>
+            • Proyectos prácticos desafiantes<br>
+            • Mentorías personalizadas<br>
+            • Networking con profesionales del sector<br>
+            • Certificación reconocida internacionalmente
+        </div>
+        
+        <div class="date">
+            📅 Clase 04 - Octubre 2025
+        </div>
+        
+        <div class="footer">
+            <p><em>"El futuro pertenece a aquellos que aprenden más habilidades y las combinan de formas creativas"</em></p>
+            <p>¡Que tengan un excelente módulo de aprendizaje! 🌟</p>
+        </div>
+    </div>
+    
+    <script>
+        // Pequeña animación de bienvenida
+        document.addEventListener('DOMContentLoaded', function() {
+            const greeting = document.querySelector('.greeting');
+            
+            setTimeout(() => {
+                greeting.style.transform = 'scale(1.02)';
+                setTimeout(() => {
+                    greeting.style.transform = 'scale(1)';
+                }, 200);
+            }, 1000);
+            
+            // Cambio de colores aleatorio para el logo
+            const logo = document.querySelector('.logo');
+            const emojis = ['🎓', '💻', '🚀', '⚡', '🌟', '🎯'];
+            
+            setInterval(() => {
+                logo.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
